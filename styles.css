@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 40px 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.profile-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #e0e7ff;
+  transition: transform 0.3s ease;
+}
+
+.profile-img img:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin: 20px 0 10px;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  color: #7f8c8d;
+}
+
+/* Nội dung chính */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.about-me,
+.skills,
+.contact {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1em;
+  color: #555;
+}
+
+.skills ul {
+  list-style: none;
+}
+
+.skills li {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #34495e;
+}
+
+.contact a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #2980b9;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+  color: #7f8c8d;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    padding: 20px 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .profile-img img {
+    width: 120px;
+    height: 120px;
+  }
+}
